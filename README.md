@@ -1,6 +1,7 @@
 # 📚 Sistema de Biblioteca - Django
 
 Sistema de gestión de biblioteca desarrollado con Django para administrar autores y libros.
+Actividad de la materia de Desarrollo de Sistemas Web.
 
 ## 🚀 Características
 
