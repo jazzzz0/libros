@@ -3,7 +3,7 @@
 Sistema de gestión de biblioteca desarrollado con Django para administrar autores y libros.
 Actividad de la materia de Desarrollo de Sistemas Web.
 
-## 🚀 Características
+## Características
 
 - Gestión de autores (nombre y nacionalidad)
 - Gestión de libros (título, resumen y autor)
@@ -12,21 +12,24 @@ Actividad de la materia de Desarrollo de Sistemas Web.
 - Búsqueda de libros por título y nombre del autor
 - Filtrado de libros por autor
 
-## 📥 Clonar el repositorio
+## 📦 Dependencias
+- Python 3.12+
 
-```bash
-git clone https://github.com/jazzzz0/libros.git
-cd libros
-```
+## Ejecutar el proyecto
 
-## 🏃‍♂️ Ejecutar el proyecto
+1. **Clonar el repositorio**
+    ```bash
+    git clone https://github.com/jazzzz0/libros.git
 
-1. **Crear entorno virtual**
+    cd libros
+    ```
+
+2. **Crear entorno virtual**
    ```bash
    python -m venv env
    ```
 
-2. **Activar entorno virtual**
+3. **Activar entorno virtual**
    ```bash
    # Windows
    .\env\Scripts\activate
@@ -35,28 +38,28 @@ cd libros
    source env/bin/activate
    ```
 
-3. **Instalar dependencias**
+4. **Instalar dependencias**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Ejecutar migraciones**
+5. **Ejecutar migraciones**
    ```bash
    python manage.py makemigrations
    python manage.py migrate
    ```
 
-5. **Crear superusuario**
+6. **Crear superusuario**
    ```bash
    python manage.py createsuperuser
    ```
 
-6. **Iniciar servidor**
+7. **Iniciar servidor**
    ```bash
    python manage.py runserver
    ```
 
-7. **Abrir en navegador**
+8. **Abrir en navegador**
    - http://localhost:8000/index/ - Página principal
    - http://localhost:8000/admin/ - Panel de administración
    - http://localhost:8000/libros/ - Lista estática de libros
@@ -68,13 +71,13 @@ cd libros
 
 Una vez que hayas creado el superusuario y encendido el servidor, puedes acceder al panel de administración en `/admin/` para gestionar:
 
-#### 👨‍💼 **Author (Autor)**
+#### **Autores**
 - **Crear autor**: Click en "Authors" → "Add author"
 - **Campos requeridos**: Nombre (máximo 80 caracteres)
 - **Campos opcionales**: Nacionalidad (máximo 100 caracteres)
 - **Editar/Eliminar**: Usar los botones de acción en la lista
 
-#### 📚 **Book (Libro)**
+#### **Libros**
 - **Crear libro**: Click en "Books" → "Add book"
 - **Campos requeridos**: Título (máximo 150 caracteres) y Autor
 - **Campos opcionales**: Resumen (texto largo)
@@ -87,17 +90,17 @@ Una vez que hayas creado el superusuario y encendido el servidor, puedes acceder
 
 El panel de administración incluye capacidades avanzadas para encontrar y organizar la información:
 
-#### 📝 **Búsqueda de Autores**
+#### **Búsqueda de Autores**
 - **Por nombre**: Busca autores escribiendo parte de su nombre
 - **Por nacionalidad**: Filtra autores por país de origen
 - **Búsqueda combinada**: Ambos campos son buscables simultáneamente
 
-#### 📚 **Búsqueda de Libros**
+#### **Búsqueda de Libros**
 - **Por título**: Encuentra libros escribiendo parte del título
 - **Por autor**: Busca libros por el nombre del autor asociado
 - **Búsqueda inteligente**: La búsqueda funciona con coincidencias parciales
 
-#### 🎯 **Filtrado de Libros**
+#### **Filtrado de Libros**
 - **Filtro por autor**: Muestra solo los libros de un autor específico
 - **Vista organizada**: Los libros se agrupan por autor para facilitar la navegación
 - **Filtros combinables**: Puedes combinar búsquedas con filtros para resultados más precisos
