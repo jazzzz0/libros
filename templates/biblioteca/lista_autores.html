@@ -18,10 +18,11 @@
         <tbody>
             {% for autor in autores %}
                 <tr>
+                    <td>{{ autor.id }}</td>
                     <td>{{ autor.name }}</td>
                     <td>{{ autor.nacionality }}</td>
                     <td>
-                        <a href="#">Ver</a>
+                        <a href="{% url 'biblioteca_app:lista_libros' autor.id %}">Ver libros</a>
                     </td>
                 </tr>
             {% endfor %}

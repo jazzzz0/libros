@@ -11,8 +11,9 @@ Actividad de la materia de Desarrollo de Sistemas Web.
 - Búsqueda de autores por nombre y nacionalidad
 - Búsqueda de libros por título y nombre del autor
 - Filtrado de libros por autor
+- 
 
-## 📦 Dependencias
+## 📦 Requerimientos
 - Python 3.12+
 
 ## Ejecutar el proyecto
@@ -63,7 +64,9 @@ Actividad de la materia de Desarrollo de Sistemas Web.
    - http://localhost:8000/index/ - Página principal
    - http://localhost:8000/admin/ - Panel de administración
    - http://localhost:8000/libros/ - Lista estática de libros
-   - http://localhost:8000/autores/ - Lista de autores registrados a través del panel de administración
+   - http://localhost:8000/autor/add/ - Interfaz para agregar autores
+   - http://localhost:8000/ - Lista de autores registrados
+   - http://localhost:8000/libros-autor/<int:pk>/ - Lista de libros por id de autor
 
 ## 📖 Instrucciones de Uso
 
